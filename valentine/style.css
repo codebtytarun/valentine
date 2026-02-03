@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.contain{
+	height: 780px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(baby.png);
+	background-size: cover;
+	gap: 25px;
+}
+
+.contain img{
+	width: 400px;
+}
+
+
+.contain h1{
+	font-size: 40px;
+	padding-left:35px ;
+}
+
+.btn{
+	padding-left:3rem;
+
+}
+
+.btn a{
+	font-size: 1.5rem;
+	background-color: white;
+	color: black;
+	padding: 7px 18px;
+	text-decoration: none;
+	border-radius: 10px;
+	margin-right: 3rem ;
+ 	box-shadow:.5rem .5rem .4rem ;
+ 	cursor: pointer;
+}
+
+.hide:hover{
+	background-color: lightpink;
+	color: lightpink;
+	box-shadow: none;
+	transition-delay: .2s;
+}
+
+@media (max-width: 700px){
+	.contain img{
+		width: 230px;
+	}
+
+	.contain h1{
+		font-size: 20px;
+		padding-left: 10px;
+	}
+
+	.btn a{
+		font-size: 16px;
+	}
+}
